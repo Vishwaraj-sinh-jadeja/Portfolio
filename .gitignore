@@ -1,0 +1,165 @@
+###############################################################################
+# Root .gitignore — global standards for this monorepo
+# Based on github/gitignore templates: VisualStudio.gitignore, Node.gitignore
+###############################################################################
+
+############################
+# .NET / ASP.NET Core
+############################
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Bb]uild/
+bld/
+out/
+build/
+publish/
+
+# Visual Studio cache/options
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+
+# Rider / JetBrains
+.idea/
+
+# Test results
+[Tt]est[Rr]esult*/
+TestResults/
+[Bb]enchmarks/[Bb]enchmarks.Artifacts/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuspec
+
+# NuGet v3 lock files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MSBuild binaries / logs
+*.binlog
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Publish profiles output
+*.pubxml.user
+
+# Entity Framework / database
+*.mdf
+*.ldf
+*.ndf
+
+############################
+# Node.js
+############################
+
+# Dependencies
+node_modules/
+.jspm/
+.npm/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnpm-store/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.stylelintcache
+.nx/
+
+############################
+# Angular
+############################
+
+dist/
+out-tsc/
+.angular/
+tmp/
+.tmp/
+
+# Karma / coverage
+coverage/
+libpeerconnection.log
+testem.log
+__screenshots__/
+
+############################
+# Environment & secrets
+############################
+
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.Local.json
+*.pem
+*.key
+!*.pub
+
+############################
+# IDEs and editors
+############################
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.sublime-workspace
+*.sublime-project
+.vscode-test/
+
+############################
+# Tool-local state
+############################
+
+.freebuff/
+
+############################
+# OS files
+############################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
